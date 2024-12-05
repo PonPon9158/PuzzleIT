@@ -1,7 +1,7 @@
 # PuzzleIT Ver 0.1.0
 Simple website showcasing mini-puzzles about Information Technology
 
-##Needed Features: 
+**Needed Features:**
 - Navigation Bar
 - Home - latest puzzles, news, etc and other pages overview
 - Puzzle Gallery - iba't-ibang mga puzzles pagpipilian
