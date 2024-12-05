@@ -1,6 +1,8 @@
 # PuzzleIT Ver 0.1.0
 Simple website showcasing mini-puzzles about Information Technology
 
+**Added Files:**
+
 **Needed Features:**
 - Navigation Bar
 - Home - latest puzzles, news, etc and other pages overview
