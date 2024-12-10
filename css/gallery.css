@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background:#1F2122;
+    font-family:"Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+header aside, 
+article {
+    width: 85%;
+    height: 100%;
+    border: 1px solid #1F2122;
+    border-radius: 0px 10px 10px 0px;
+    background: #27292A;
+
+}
+
+header aside {
+    width: 15%;
+    border-radius: 10px 0px 0px 10px;
+    background: #EC6090;
+}
+
+header aside h1 {
+    width: 100%;
+    height: 10%;
+   /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+header aside h1 i {
+    margin-right: 5px ;
+}
+
+header aside button {
+    display: block;
+    width: 100%;
+    height: 10%;
+    padding: 8px 0px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    background: #EC6090;
+    color: #ffff;
+    margin-top: 5px;
+}
+
+header aside button:hover {
+    background: #db548b;
+}
+
+header aside ul {
+    position: relative;
+    margin-top: 10px;
+    list-style-type: none;
+    margin-left: 12%;
+}
+
+header aside ul li {
+    padding: 2.5px 0px;
+
+}
+
+header aside ul li a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 12px;
+    font-weight: 400;
+    transition: .3s linear;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #27292A;
+    border: 1px solid #1F2122;
+    padding: 0 20px;
+    height: 50px;
+  }
+  
+.navbar ul{
+    list-style-type: none;
+    background-color:#27292A;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    gap: 10px; 
+    height: 100%;
+}
+
+.navbar li {
+    height: 100%;
+  }
+
+.navbar a{
+    font-size: small;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    display: flex;
+    cursor: default;
+    color:#EC6090;
+    text-decoration: none;
+    padding: 15px;
+    margin-left: 20px;
+    display: flex;
+    height: 100%;
+}
+
+.navbar a:hover{
+    background-color:#1F2122;
+}
+
+.navbar li{
+    padding: 0 10px;
+}
+ 
+.search {
+    position: relative; 
+    height: 100%;
+    width: 40%;
+    background: #27292A; 
+    border: none;
+    border-radius: 5px;
+    padding: 4px 10px;
+    display: flex;
+    align-items: center; 
+    height: 35px;
+}
+
+.search input {
+    width: 94%; 
+    border: none; 
+    outline: none; 
+    padding: 10px 10px 10px 40px; 
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: #EC6090;
+    background: none;
+}
+
+.search input:focus {
+    border-bottom: 2px solid #EC6090;
+}
+
+.search i {
+    position: absolute;
+    left: 10px;
+    font-size: 15px;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.game1 {
+    width: 100%;
+    padding: 20px;
+    height: calc(100% - 70px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game1 h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.game-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EC6090;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; 
+    width: 100%; 
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px; 
+    transition: filter 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover img {
+    filter: brightness(50%);
+}
+
+.game-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .game-name {
+    opacity: 1;
+}
