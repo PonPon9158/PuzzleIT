@@ -165,7 +165,7 @@ aside {
     color: #fff;
     background-color:#EC6090; /* Add your desired background color */
     width: 200px; /* Sidebar width */
-    padding: 10px;
+    padding: 0px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     
 }
@@ -173,9 +173,10 @@ aside {
 aside button {
     display: block; /* Ensures buttons stack vertically */
     width: 100%; /* Matches sidebar width */
+    height: 10%;
     margin-top: 5px;
     margin-bottom: 10px; /* Adds space between buttons */
-    padding: 8px 0px;
+    padding: 15px 10px;
     text-align: center;
     border: none;
     background-color:#EC6090;
@@ -208,6 +209,15 @@ header aside ul li a {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.content i {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    font-size: 2rem; /* Adjust size */
+    color: white; /* Adjust to match your design */
 }
 
 .content iframe {
