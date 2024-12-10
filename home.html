@@ -1,69 +1,167 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<title> Jonreb Website (Home) </title>
-
-<link rel="stylesheet" href="css/styles.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="css/images/icon-home.png">
+    <title>PuzzleIT</title>
+    
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/home.css">
+    
 </head>
-
 <body>
-<header>
 
-<nav>
-<ul>
-<li><a href="home.html"> Home </a></li>
-<li><a href="about.html"> About </a></li>
-<li><a href="gallery.html"> Gallery </a></li>
-<li><a href="contact.html"> Contact </a></li>
-</ul>
-</nav>
+<!-- header section starts -->
+    
+<header class="header">
+
+    <section class="flex">
+    
+        <a href="" class="logo"><i class="fa-solid fa-gamepad"></i><b><i><span>Puzzle</span></i></b>IT</a>
+        
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+        <a href="#" class="btn">sign up</a>
+    
+    </section>
 
 </header>
-
-<main>
-<div class="content">
-<h1> Welcome to My Cyberpunk World! </h1>
-<p> Hi, I'm <b> Jonreb Alonzo </b> (The overmind of this world) </p>
-<h3> Interested about me? Well you've come to the right website! </h3>
+    
+<!-- header section ends -->
+    
+<div id="menu-btn"><i class="fa-solid fa-bars"></i></div>
+    
+     
+<!-- home section starts -->
+    
+<div class="home" id="home">
+    
+    <section class="flex">
+        
+        <div class="content">
+            <h3><span>unlimited</span> Games</h3>
+            <p>Welcome to the ultimate gaming hub! Explore exciting games, daily events, and unbeatable fun—all in one place. Join us today and level up your gaming experience!</p>
+            <a href="#" class="btn">Play Now</a>
+        </div>
+        
+        <div class="image">
+            <img src="css/images/#" alt="">
+        </div>
+        
+    </section>
+    
 </div>
-<br>
+    
+<!-- home section ends -->
 
-<div class="content">
-<p> <b> Before anything else, let's first set the mood of this space by playing a video from <br> <i> Lady Gaga's Chromatica era </i> that inspired my cyberpunk galaxy world vibes :) </b> </p>
+<!-- features section starts -->
+    
+<section class="features">
+    
+    <h1 class="heading">Our<span>Features</span></h1>
+    
+    <div class="box-container">
+        
+        <div class="box" style="background: url(css/images/) no-repeat;">
+            <img src="css/images/1.png" alt="">
+            <h3>New events everyday</h3>
+            <p>New events every day fresh challenges, thrilling gameplay, and endless fun await!</p>
+        </div>
+        
+        <div class="box" style="background: url(css/images/) no-repeat;">
+            <img src="css/images/2.png" alt="">
+            <h3>Compatible to any devices</h3>
+            <p>Enjoy seamless gaming on any devices anytime, anywhere!</p>
+        </div>
+        
+        <div class="box" style="background: url(css/images/) no-repeat;">
+            <img src="css/images/3.png" alt="">
+            <h3>Online and offline modes</h3>
+            <p>Enjoy endless fun with our online and offline game modes play solo or connect globally, anytime, anywhere!</p>
+        </div>
+        
+    </div>
+    
+</section>
+    
+<!-- features section ends -->    
+    
+<!-- about section starts -->
+    
 
-<video width="520" height="300" controls>
-        <source src="LG AG ROM Music Video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-<h2> Rain On Me (Music Video) - Lady Gaga & Ariana Grande </h2>
+<!-- about section ends -->
+    
+<!-- faq section starts -->
+    
+<div class="faq" id="faq">
+    
+    <section class="box-container">
+        
+        <h1 class="heading"><span>F</span>A<span>Q</span></h1>
+        
+        <div class="box">
+            <div class="title">
+                <h3>How to play?</h3>
+                <i class="fa fa-plus"></i>
+            </div>  
+            <div class="content active">Choose a puzzle, solve challenges using your skills, and earn rewards as you progress. With puzzles for all levels, there’s always fun waiting. Start playing PuzzleIT today!
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="title">
+                <h3>Choose Your Puzzle</h3>
+                <i class="fa fa-plus"></i>
+            </div>  
+            <div class="content">Browse through a variety of captivating puzzles, from brain-teasing classics to innovative challenges.
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="title">
+                <h3>Start Solving</h3>
+                <i class="fa fa-plus"></i>
+            </div>  
+            <div class="content">Use your logic, creativity, and skills to put the pieces together or crack the code. Every level brings new surprises!
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="title">
+                <h3>How to Earn Rewards</h3>
+                <i class="fa fa-plus"></i>
+            </div>  
+            <div class="content">Complete puzzles to unlock achievements, earn rewards, and climb the leaderboards.
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="title">
+                <h3>Challenge Yourself</h3>
+                <i class="fa fa-plus"></i>
+            </div>  
+            <div class="content">With puzzles for all skill levels, there’s always a new challenge waiting for you.
+            </div>
+        </div>
+        
+        
+    </section>
+    
 </div>
-<br>
-
-<div class="content">
-<h2> What can you expect on this Website: </h2>
-<ul style="text-align: left";>
-<li> <b> <mark> Home: </mark> </b> <b> <i> You're here right now! </i> </b> This is the home page of the website. </li>
-<li> <b> <mark> About: </mark> </b> <b> <i> This is where you'll get to know me better. </i> </b> Information about me is located here. </li>
-<li> <b> <mark> Gallery: </mark> </b> <b> <i> A series of my photos are exhibited here. </i> </b> My metamorphosis through the years can be observed here. </li>
-<li> <b> <mark> Contact: </mark> </b> <b> <i> If you want to connect with me, GO HERE. </i> </b> This is where my social media accounts and other contacts can be found. </li>
-</ul>
-
-</div>
-<br>
-
-<div class="content">
-<h4> Feel free to explore every corner of this world. Navigate using the menu above. Enjoy! </h4>
-</div>
-
-</main>
-
-<footer>
-<p> Jonreb Alonzo 2ITSE01 </p>
-</footer>
-
+    
+<!-- faq section ends -->   
+    
+    
+    
+    
+<!-- cutom js file link -->
+<script src="js/home.js"></script>
+    
 </body>
-
-</html>
+</html> 
