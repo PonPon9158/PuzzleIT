@@ -94,7 +94,6 @@ header aside ul li a {
     font-size: 12px;
     font-weight: 400;
     transition: .3s linear;
-
 }
 
 .navbar {
@@ -210,7 +209,7 @@ header aside ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #EC6090;
+    background: #27292A;
     color: #fff;
     text-decoration: none;
     font-size: 18px;
