@@ -148,6 +148,21 @@ section{
     color: #EC6090; /* Pink hover effect */
 }
 
+#menu-btn {
+    position: fixed;
+    bottom: 2rem; right: 2rem;
+    z-index: 10000;
+    background: var(--main-color);
+    color: var(--white);
+    height: 4.5rem;
+    width: 5rem;
+    line-height: 4.4rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    display: none;
+}
+
 /* Home Section Styles */
 #home {
     background-color: #27292A;
@@ -270,5 +285,36 @@ section{
     
     html{
         font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .member {
+        flex: 1 1 calc(50% - 10px); /* Two members per row */
+    }
+}
+
+/* Adjust for very small screens */
+@media screen and (max-width: 480px) {
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .member {
+        flex: 1 1 100%; /* One member per row */
+    }
+
+    .member img {
+        max-width: 80%; /* Scale down images */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .member h2 {
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+
+    .member p {
+        font-size: 1.4rem; /* Adjust text size */
     }
 }
