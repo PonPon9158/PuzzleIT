@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman Game JavaScript</title>
-    <link rel="stylesheet" href="css/game.css">
-    <script src="js/word-list.js" defer></script>
-    <script src="js/game.js" defer></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/icon-home.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>PuzzleIT</title>
+    
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/hangman.css">
+    
 </head>
 <body>
-    <div class="game-modal">
-        <div class="content">
-            <img src="#" alt="gif">
-            <h4>Game Over!</h4>
-            <p>The correct word was: <b>rainbow</b></p>
-            <button class="play-again">Play Again</button>
+
+<!-- header section starts -->
+    
+<header class="header" style="background-color: #1F2122;">
+    <section class="flex">
+        <a href="home.html" class="logo"><i class="fa-solid fa-gamepad"></i><b><i><span>Puzzle</span></i></b>IT</a>
+        <nav class="navbar" >
+            <a href="home.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <div class="search">
+            <input type="text" placeholder="Search..." />
+            <i class="bi bi-search"></i>
         </div>
-    </div>
-    <div class="container">
-        <div class="hangman-box">
-            <img src="#" draggable="false" alt="hangman-img">
-            <h1>Hangman Game</h1>
-        </div>
-        <div class="game-box">
-            <ul class="word-display"></ul>
-            <h4 class="hint-text">Hint: <b></b></h4>
-            <h4 class="guesses-text">Incorrect guesses: <b></b></h4>
-            <div class="keyboard"></div>
-        </div>
-    </div>
+    
+    </section>
+
+</header>
+    
+<!-- header section ends -->
+
+<div id="menu-btn"><i class="fa-solid fa-bars"></i></div>
+    
+<!-- home section starts -->
+    
+<div class="main-container">
+    <aside>
+        <br>
+        <a href="hangman.html" style="text-decoration: none;"><button>Hangman</button></a>
+        <a href="word-hunt.html" style="text-decoration: none;"></a><button>Word Hunt</button></a>
+        <a href="wordle.html" style="text-decoration: none;"></a><button>Wordle</button></a>
+        <a href="connections.html" style="text-decoration: none;"></a><button>Connections</button></a>
+        <a href="crosswords.html" style="text-decoration: none;"><button>Crosswords</button></a>
+        <a href="word-pic.html" style="text-decoration: none;"></a><button>Word Pic</button></a>
+    </aside>
+    
+    <section class="content">
+        <a href="gallery.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <h3 style="font-size: 3rem;">Hangman</h3> <br>
+        <iframe src="Hangman/index.html" name="hangman" height="100%" width="100%" title="Hangman Game"></iframe>
+    </section>
+</div>
+    
+<!-- main container ends -->
+
+    
+<!-- cutom js file link -->
+<script src="js/home.js"></script>
+    
 </body>
-</html>
+</html> 

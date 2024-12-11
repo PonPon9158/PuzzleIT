@@ -1,0 +1,325 @@
+:root{
+    --main-color:#EC6090;
+    --bg-color: #1F2122;
+    --bg-container: #27292A;
+    --white: #fff;
+    --light-white: rgba(255,255,255,.8);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.3);
+    --border:.2rem solid rgba(255,255,255,.1);  
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    outline: none; border: none;
+    margin: 0;padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    overflow-x: hidden;
+}
+
+::selection {
+    background: #e75e8d;
+    color: #fff;
+}
+
+body{
+    background: var(--bg-color);
+    
+}
+
+section{
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    color: white;
+    border-radius: 2.7rem;
+    border: .3rem solid var(--main-color);
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    background: none;
+    transition: .2s linear;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    height: 100%;
+    width: 0;
+    background: var(--white);
+    z-index: -1;
+    transition: .2s linear;
+}
+
+
+.btn:hover::before{
+    width: 100%;
+    left: 0;
+} 
+
+.btn:hover{
+    color: var(--main-color);
+}
+
+.heading{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1;
+    height: fit-content;
+}
+
+.header.active{
+    background: var(--bg-color);
+    box-shadow: var(--box-shadow);
+}
+
+.header .flex{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .flex .logo{
+    font-size: 2.9rem;
+    color: var(--white);
+}
+
+.header .flex .logo i{
+    margin-right: .5rem;
+    color: var(--white);
+    z-index: 1000;
+}
+
+.header .flex .logo span{
+    color: var(--main-color);
+    font: bold;
+    font-size: 2.5rem;
+}
+
+.header .flex .navbar a{
+    margin: 0 1.5rem;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.header .flex .navbar a:hover{
+    color: var(--main-color);
+}
+
+.header .flex .btn{
+    margin-top: 0;
+}
+
+#menu-btn {
+    position: fixed;
+    bottom: 2rem; right: 2rem;
+    z-index: 10000;
+    background: var(--main-color);
+    color: var(--white);
+    height: 4.5rem;
+    width: 5rem;
+    line-height: 4.4rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    display: none;
+}
+
+.main-container {
+    display: flex;
+    height: calc(100vh - 70px);
+    margin-top: 70px; /* Matches the header height */
+}
+
+aside {
+    color: #fff;
+    background-color:#EC6090; /* Add your desired background color */
+    width: 200px; /* Sidebar width */
+    padding: 0px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+aside button {
+    display: block; /* Ensures buttons stack vertically */
+    width: 100%; /* Matches sidebar width */
+    height: 10%;
+    margin-top: 5px;
+    margin-bottom: 10px; /* Adds space between buttons */
+    padding: 15px 10px;
+    text-align: center;
+    border: none;
+    background-color:#EC6090;
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+}
+
+.main-container aside button:hover {
+    background: #db548b;
+}
+
+header aside ul li a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 12px;
+    font-weight: 400;
+    transition: .3s linear;
+}
+
+.content {
+    margin-top: 0px;
+    flex: 1; /* This allows the content section to take the remaining space */
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.content i {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    font-size: 2rem; /* Adjust size */
+    color: white; /* Adjust to match your design */
+}
+
+.content iframe {
+    transform: scale(0.8); /* Scale the content down */
+    transform-origin: center;
+    display: block; /* Prevents inline issues */
+    margin: 0 auto; /* Centers horizontally */
+    border: none; /* Remove border if not needed */
+    overflow: hidden;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+.search {
+    position: relative; 
+    height: 100%;
+    width: 40%;
+    background: #27292A; 
+    border: none;
+    border-radius: 5px;
+    padding: 4px 10px;
+    display: flex;
+    align-items: center; 
+    height: 35px;
+}
+
+.search input {
+    width: 94%; 
+    border: none; 
+    outline: none; 
+    padding: 10px 10px 10px 40px; 
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: #EC6090;
+    background: none;
+}
+
+.search input:focus {
+    border-bottom: 2px solid #EC6090;
+}
+
+.search i {
+    position: absolute;
+    left: 10px;
+    font-size: 15px;
+    color: #ffff;
+    cursor: pointer;
+}
+
+/* media queries */
+
+@media (max-width:991px){
+    
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:768px){
+    
+    #menu-btn{
+        display: inline-block;
+    }
+    
+    .header .flex .navbar{
+        position: fixed;
+        top: 0; left: -120%;
+        height: 100vh;
+        width: 100%;
+        z-index: 2000;
+        background: rgba(0,0,0,0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        flex-flow: column;
+        transition: .2s linear;
+    }
+    
+    .header .flex .navbar.active{
+        left: 0;
+    }
+    
+    .header .flex .navbar a{
+        font-size: 4rem;
+        color: white;
+    }
+    
+    
+    .home .flex .content h3{
+        font-size: 3.5rem;
+    }
+    
+}
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+}
