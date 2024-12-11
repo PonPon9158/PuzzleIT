@@ -6,35 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>PuzzleIT | Gallery</title>
 </head>
 
 <body>
+    <!-- header section starts -->
+    
+<header class="header" style="background-color: #1F2122;">
+    <section class="flex">
+        <a href="home.html" class="logo"><i class="fa-solid fa-gamepad"></i><b><i><span>Puzzle</span></i></b>IT</a>
+        <nav class="navbar" >
+            <a href="home.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <div class="search">
+            <input type="text" placeholder="Search..." />
+            <i class="bi bi-search"></i>
+        </div>
+    
+    </section>
+
+</header>
+    
+<!-- header section ends -->
+
+<div id="menu-btn"><i class="fa-solid fa-bars"></i></div>
+    
+<!-- home section starts -->
+    
+<div class="main-container">
+    <aside>
+        <br>
+        <a href="hangman.html" style="text-decoration: none;"><button>Hangman</button></a>
+        <a href="word-hunt.html" style="text-decoration: none;"><button>Word Hunt</button></a>
+        <a href="wordle.html" style="text-decoration: none;"><button>Wordle</button></a>
+        <a href="connections.html" style="text-decoration: none;"><button>Connections</button></a>
+        <a href="crosswords.html" style="text-decoration: none;"><button>Crosswords</button></a>
+        <a href="word-pic.html" style="text-decoration: none;"><button>Word Pic</button></a>
+    </aside>
+
     <header>
-        <aside>
-            <h1><i class="bi bi-puzzle-fill"></i>PuzzleIT</h1>
-            <a href="hangman.html" style="text-decoration: none;"><button>Hangman</button></a>
-            <a href="word-hunt.html" style="text-decoration: none;"></a><button>Word Hunt</button></a>
-            <a href="wordle.html" style="text-decoration: none;"></a><button>Wordle</button></a>
-            <a href="connections.html" style="text-decoration: none;"></a><button>Connections</button></a>
-            <a href="hangman.html" style="text-decoration: none;"><button>Crosswords</button></a>
-            <a href="hangman.html" style="text-decoration: none;"></a><button>Word Pic</button></a>
-        </aside>
         <article>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="search">
-                    <input type="text" placeholder="Search..." />
-                    <i class="bi bi-search"></i>
-                </div>
-        
-            </nav>
-        
             <div class="game1">
             
                 <h3>All Puzzles</h3>
@@ -67,6 +83,8 @@
             </div>
         </article>
     </header>
+
+</div>
 </body>
 
 </html>
