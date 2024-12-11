@@ -273,6 +273,59 @@ h3 {
 
 /* media queries */
 
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    aside {
+        width: 100%; /* Full width for the sidebar */
+        height: auto; /* Adjust height */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    aside button {
+        flex: 1 1 calc(50% - 10px); /* Two buttons per row */
+        margin: 5px; /* Add spacing */
+    }
+
+    .game-gallery {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        grid-template-rows: auto; /* Allow dynamic rows */
+        gap: 15px; /* Reduce spacing */
+    }
+
+    .card img {
+        object-fit: contain; /* Ensure images fit nicely */
+    }
+
+    header .flex {
+        flex-wrap: wrap; /* Allow elements to stack */
+        justify-content: center; /* Center align items */
+    }
+
+    .search {
+        width: 90%; /* Shrink the search box */
+    }
+
+    #menu-btn {
+        display: block; /* Show mobile menu button */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .game-gallery {
+        grid-template-columns: 1fr; /* One column */
+    }
+
+    .btn {
+        font-size: 1.6rem; /* Adjust button text size */
+        padding: 0.8rem 2rem;
+    }
+}
+
 @media (max-width:991px){
     
     html{
@@ -323,3 +376,26 @@ h3 {
         font-size: 50%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    aside {
+        display: none; /* Hide the sidebar */
+    }
+
+    .main-container {
+        margin-top: 70px; /* Adjust for header spacing */
+    }
+
+    
+    .content iframe {
+        transform: scale(1); /* Scale the content down */
+        height:100%;
+        width:100%;
+        transform-origin: center;
+        display: block; /* Prevents inline issues */
+        margin: 0 auto; /* Centers horizontally */
+        border: none; /* Remove border if not needed */
+        overflow: hidden;
+    }
+}
+
