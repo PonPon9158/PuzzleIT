@@ -10,6 +10,14 @@ h1 {
 }
 
 body {
+  transform: scale(0.3); /* Scale the content down */
+  transform-origin: center; /* Set the scaling anchor point */
+  width: 125%; /* Adjust to compensate for scaling */
+  height: auto;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+body {
   color: #333;
 }
 

@@ -204,12 +204,12 @@ header aside ul li a {
     margin-top: 0px;
     flex: 1; /* This allows the content section to take the remaining space */
     padding: 30px;
-    overflow-y: auto; /* Scrolls if content exceeds available height */
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
 }
 
 .content i {
@@ -221,8 +221,12 @@ header aside ul li a {
 }
 
 .content iframe {
+    transform: scale(0.8); /* Scale the content down */
+    transform-origin: center;
     display: block; /* Prevents inline issues */
     margin: 0 auto; /* Centers horizontally */
+    border: none; /* Remove border if not needed */
+    overflow: hidden;
 }
 
 h3 {
